@@ -1,0 +1,24 @@
+I. let, var and const
+1. What are var and const in JavaScript?
+
+2. What are the differences between let and var?
+Both let and var can be updated but only var can be re-declared.
+var is function scope, it will be undefined when accessing a variable
+before it's declared. And let is block scope, it will be ReferenceError when accessing a variable before it's declared.
+
+3. What are the differences between let and const?
+let variables can be updated while const variables can not.
+
+4. What to use in what cases?
+var is function scope and globally scope. It is globally scoped when a var variable is declared outside a function.
+let is block scoped. A block is a chunk of code bounded by {}.
+const is block scoped too.
+Recommended use let and const.
+
+II. Boolean
+1. What is Boolean?
+Boolean is a primitive data type commonly used in 
+computer programming languages.
+
+2. What results in Boolean?
+Boolean just have two possible results: true or false.
