@@ -1,5 +1,9 @@
 I. let, var and const
 1. What are var and const in JavaScript?
+JavaScript use keyword var and const to declare a variable.
+Var can be updated and re-declared while const can't be updated
+var is function scope and globally scope. 
+const declarations are block scoped
 
 2. What are the differences between let and var?
 Both let and var can be updated but only var can be re-declared.
