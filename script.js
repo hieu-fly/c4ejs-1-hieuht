@@ -74,23 +74,23 @@ if (x2 % 2 == 0) {
 
 // Excercise 8
 // a
-for(let i = 0; i < 3; i++){
+for (let i = 0; i < 3; i++) {
     console.log('L');
 }
-for(let i = 0; i < 3; i++){
+for (let i = 0; i < 3; i++) {
     console.log('H');
 }
 // b
 let n6 = Number(prompt("Enter number"));
-for(let i = 0; i < (n6/2); i++){
+for (let i = 0; i < (n6 / 2); i++) {
     console.log('L');
 }
-for(let i = 0; i < Math.floor((n6/2)); i++){
+for (let i = 0; i < Math.floor((n6 / 2)); i++) {
     console.log('H');
 }
 //c
-for(let i = 0; i < 8; i++){
-    if(i % 2 == 0){
+for (let i = 0; i < 8; i++) {
+    if (i % 2 == 0) {
         console.log("0");
     } else {
         console.log('1');
@@ -98,8 +98,8 @@ for(let i = 0; i < 8; i++){
 }
 //d
 let n7 = Number(prompt('Enter a number'))
-for(let i = 0; i < n7; i++){
-    if(i % 2 == 0){
+for (let i = 0; i < n7; i++) {
+    if (i % 2 == 0) {
         console.log("0");
     } else {
         console.log('1');
@@ -122,6 +122,56 @@ if (result < 16) {
     alert("Overweight");
 } else if (result >= 30) {
     alert("Obese");
+}
+
+// Excercise 10
+//a
+for (let i = 0; i < 4; i++) {
+    fd(100)
+    rt(90)
+}
+//b
+for (let i = 0; i < 3; i++) {
+    fd(100)
+    rt(120)
+    fd(100)
+}
+//c
+for (let i = 0; i < 5; i++) {
+    fd(100)
+    rt(72)
+}
+//d
+for (let i = 0; i < 6; i++) {
+    fd(100)
+    rt(60)
+}
+//Excercise11
+let n = Number(prompt("hieu"));
+for (let i = 0; i < n; i++) {
+    if (n == 3) {
+        fd(100)
+        rt(120)
+        fd(100)
+    } else if (n == 4) {
+        fd(100)
+        rt(90)
+    } else if (n >= 100) {
+        fd(10)
+        rt(5)
+    } else if (n == 5) {
+        fd(100)
+        rt(72)
+    } else if (n == 6) {
+        fd(100)
+        rt(60)
+    } else if (n == 7) {
+        fd(100)
+        rt(51.42)
+    } else if (n == 8) {
+        fd(100)
+        rt(45)
+    }
 }
 
 
