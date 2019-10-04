@@ -1,21 +1,21 @@
-// // Excercise1
-// //first way
-// let a = 5, b = 6;
-// console.log(a, b);
-// b = [a, a = b][0];
-// console.log(a, b);
-// //second way
-// let a1 = 5, b1 = 6;
-// console.log(a1, b1);
-// [a1, b1] = [b1, a1]
-// console.log(a1, b1);
-// //excercise 2
-// const s = "Heloo beauty there";
-// let result = s.split(" ");
-// console.log(result);
-// //excercise3
-// const a2 = [4, 5, 7, -8];
-// console.log(...a2);
+// Excercise1
+//first way
+let a = 5, b = 6;
+console.log(a, b);
+b = [a, a = b][0];
+console.log(a, b);
+//second way
+let a1 = 5, b1 = 6;
+console.log(a1, b1);
+[a1, b1] = [b1, a1]
+console.log(a1, b1);
+//excercise 2
+const s = "Heloo beauty there";
+let result = s.split(" ");
+console.log(result);
+//excercise3
+const a2 = [4, 5, 7, -8];
+console.log(...a2);
 //Ecercise 4
 // let ar = ["Jeans", "T-shirt", "Shocks"];
 // while(true){
@@ -46,38 +46,38 @@
 // }
 
 //Excercise 5
-// let number = prompt("Enter a number");
+let number = prompt("Enter a number");
 
-// let ar1 = number.split(",")
-// let sum = 0;
-// for (let i = 0; i < ar1.length; i++) {
-//     let n = parseInt(ar1[i]);
-//     sum += n;
-// }
-// alert(sum);
+let ar1 = number.split(",")
+let sum = 0;
+for (let i = 0; i < ar1.length; i++) {
+    let n = parseInt(ar1[i]);
+    sum += n;
+}
+alert(sum);
 // //Excercise 6
-// let number1 = prompt("Enter a number");
-// let ar2 = number1.split(",")
-// let min = ar2[0];
-// for(let i = 0; i < ar2.length; i++){
-//     if(ar2[i] < min){
-//         min = ar2[i];
-//     }
-// }
-// alert(min);
+let number1 = prompt("Enter a number");
+let ar2 = number1.split(",")
+let min = ar2[0];
+for(let i = 0; i < ar2.length; i++){
+    if(ar2[i] < min){
+        min = ar2[i];
+    }
+}
+alert(min);
 //Excercise 7
-// const arr=[3,4,6,-9,10,-88,2];
-// let found = false;
-// let an = Number(prompt("Enter a number"))
-// for(let i = 0; i < arr.length; i++){
-//     if(arr[i] == an){
-//         alert(an + " is FOUND in my array at index " + i);
-//         found = true;
-//         break;
-//     } 
-// } if(!found){
-//     alert('not found');
-// }
+const arr=[3,4,6,-9,10,-88,2];
+let found = false;
+let an = Number(prompt("Enter a number"))
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] == an){
+        alert(an + " is FOUND in my array at index " + i);
+        found = true;
+        break;
+    } 
+} if(!found){
+    alert('not found');
+}
 //Excercise 8
 let sheeps = [5, 7, 300, 90, 24, 50, 75];
 console.log("hello my name is Hieu and here is my sheep size:");
@@ -111,3 +111,15 @@ for (let x = 0; x < 4; x++) {
 console.log("My flock has size in total: ", sum);
 let money = sum * 2;
 console.log("I would get", sum, "* 2$", " = ", money);
+
+//excercise 10
+let number3 = prompt("Enter a number");
+let ar4 = number3.split(",")
+const result1 = ar4.map(x => "<"+x+">");
+alert(ar4.toString() + " => " + result1.toString());
+//excercise 11
+let number2 = prompt("Enter a number");
+let ar3 = number2.split(",")
+console.log(ar3);
+const result = ar3.filter(i => ar3[i] % 2 == 0);
+alert(ar3.toString() + " => " + result.toString());
