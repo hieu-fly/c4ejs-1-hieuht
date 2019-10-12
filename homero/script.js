@@ -11,8 +11,8 @@ console.log(a1, b1);
 console.log(a1, b1);
 //excercise 2
 const s = "Heloo beauty there";
-let result = s.split(" ");
-console.log(result);
+let result2 = s.split(" ");
+console.log(result2);
 //excercise3
 const a2 = [4, 5, 7, -8];
 console.log(...a2);
