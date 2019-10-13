@@ -1,0 +1,26 @@
+.menu{
+    text-align: center;
+    background-color: #D5B0AC;
+}
+.menu span {
+    font-weight: bold;
+    font-size: 18px;
+    width:100px;
+    height: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.menu span:hover{
+    background-color: #9CD08F;
+    color: #ffffff;
+}
+.menu_vertical {
+    text-align: left;
+    display: grid;
+    width:75px;
+}
+.item{
+    text-align: center;
+    border-bottom: 2px solid white;
+    background-color: #D5B0AC;
+}
