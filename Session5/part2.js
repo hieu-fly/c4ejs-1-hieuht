@@ -58,10 +58,11 @@ const inventoryByBrand = {
 }
 
 let answer = prompt('Which brand?');
-console.log("There are " + inventoryByBrand[answer].length + " generations of '" + answer + "' in inventory:");
+let answerLowerCase = answer.toLowerCase();
+console.log("There are " + inventoryByBrand[answerLowerCase].length + " generations of '" + answerLowerCase + "' in inventory:");
 let sum = 0;
-for (let i = 0; i < inventoryByBrand[answer].length; i++) {
-    console.log(inventoryByBrand[answer][i].name);
-    sum += inventoryByBrand[answer][i].price * inventoryByBrand[answer][i].quantity;
+for (let i = 0; i < inventoryByBrand[answerLowerCase].length; i++) {
+    console.log(inventoryByBrand[answerLowerCase][i].name);
+    sum += inventoryByBrand[answerLowerCase][i].price * inventoryByBrand[answerLowerCase][i].quantity;
 } console.log("With total value: " + sum * 1000 + "VND");
 
