@@ -40,7 +40,7 @@ while(question.length > 0){
         if (question1 == question[randomNumber].answer) {
             alert("Bravo");
             question.splice(randomNumber, 1)
-            sum += 1;
+            sum1 += 1;
         } else {
             alert('Good luck next time!');
             question.splice(randomNumber, 1)
