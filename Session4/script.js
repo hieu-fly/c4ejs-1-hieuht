@@ -930,58 +930,58 @@ const jobData = {
     ]
 }
 
-//14.1
-// let ar = [];
-// for (let i = 0; i < jobData.hits.length; i++) {
-//     ar.push(jobData.hits[i]);
-// } console.log("Job hits:" + "\n");
-// console.log(ar);
+// 14.1
+let ar = [];
+for (let i = 0; i < jobData.hits.length; i++) {
+    ar.push(jobData.hits[i]);
+} console.log("Job hits:" + "\n");
+console.log(ar);
 
-// //14.2
-// console.log(jobData.hits[0])
+//14.2
+console.log(jobData.hits[0])
 
-// //14.3
-// console.log(jobData.hits[0].jobTitle);
+//14.3
+console.log(jobData.hits[0].jobTitle);
 
-// //14.4
-// console.log(jobData.hits[0].benefits);
+//14.4
+console.log(jobData.hits[0].benefits);
 
-// //14.5
-// let list = []
-// let stringList = '';
-// for (let i = 0; i < jobData.hits[0].benefits.length; i++) {
-//     stringList += "- " + jobData.hits[0].benefits[i].benefitValue + "\n";
-// }
-// console.log("First job hits benefits: " + "\n" + stringList);
+//14.5
+let list = []
+let stringList = '';
+for (let i = 0; i < jobData.hits[0].benefits.length; i++) {
+    stringList += "- " + jobData.hits[0].benefits[i].benefitValue + "\n";
+}
+console.log("First job hits benefits: " + "\n" + stringList);
 
-//14.6
-// for(let i = 0; i < jobData.hits.length; i++){
-//     console.log("-------------------------------------------")
-//     console.log(jobData.hits[i].jobTitle);
-//     console.log("Benefits: " + "\n")
-//     for(let j = 0; j < jobData.hits[i].benefits.length;j++){
-//         console.log("- "+ jobData.hits[i].benefits[j].benefitValue);
-//     }
-// }
+// 14.6
+for(let i = 0; i < jobData.hits.length; i++){
+    console.log("-------------------------------------------")
+    console.log(jobData.hits[i].jobTitle);
+    console.log("Benefits: " + "\n")
+    for(let j = 0; j < jobData.hits[i].benefits.length;j++){
+        console.log("- "+ jobData.hits[i].benefits[j].benefitValue);
+    }
+}
 
-//14.7
-// for (let i = 0; i < jobData.hits.length; i++) {
-//     let title = `Title: ${jobData.hits[i].jobTitle}\n`;
-//     let salary = `Salary: ${jobData.hits[i].jobSalary}$\n`;
-//     let address = `Location: ${jobData.hits[i].locations}\n`;
-//     let str = `Benefits:\n`
-//     for (let j = 0; j < jobData.hits[i].benefits.length; j++) {
-//         let value = jobData.hits[i].benefits[j];
-//         let { benefitValue: a } = value;
-//         str += "- " + a + "\n";
-//     }
-//     let skill = "Skill:" + "\n";
-//     for (let k = 0; k < jobData.hits[i].skills.length; k++) {
-//         skill += `- ${jobData.hits[i].skills[k]}\n`;
-//     }
-//     str += "----------------------------------------------------" +"\n"
-//     console.log(title + salary + address +skill+ str);
-// }
+// 14.7
+for (let i = 0; i < jobData.hits.length; i++) {
+    let title = `Title: ${jobData.hits[i].jobTitle}\n`;
+    let salary = `Salary: ${jobData.hits[i].jobSalary}$\n`;
+    let address = `Location: ${jobData.hits[i].locations}\n`;
+    let str = `Benefits:\n`
+    for (let j = 0; j < jobData.hits[i].benefits.length; j++) {
+        let value = jobData.hits[i].benefits[j];
+        let { benefitValue: a } = value;
+        str += "- " + a + "\n";
+    }
+    let skill = "Skill:" + "\n";
+    for (let k = 0; k < jobData.hits[i].skills.length; k++) {
+        skill += `- ${jobData.hits[i].skills[k]}\n`;
+    }
+    str += "----------------------------------------------------" +"\n"
+    console.log(title + salary + address +skill+ str);
+}
 
 //15
 // const pos = {
@@ -1032,5 +1032,97 @@ const jobData = {
 // }
 
 //18
+// const cmds = [
+//     {
+//         shape: 'square',
+//         x: 20,
+//         y: 40,
+//         width: 50,
+//     },
+//     {
+//         shape: 'rect',
+//         x: 8,
+//         y: 70,
+//         width: 12,
+//         height: 40,
+//     },
+//     {
+//         shape: 'rect',
+//         x: 70,
+//         y: 70,
+//         width: 12,
+//         height: 40,
+//     },
+//     {
+//         shape: 'rect',
+//         x: 10,
+//         y: 20,
+//         width: 70,
+//         height: 20,
+//     },
+//     {
+//         shape: 'square',
+//         x: 25,
+//         y: 40,
+//         width: 14,
+//     },
+//     {
+//         shape: 'square',
+//         x: 33,
+//         y: 42,
+//         width: 6,
+//     },
+//     {
+//         shape: 'square',
+//         x: 50,
+//         y: 40,
+//         width: 14,
+//     },
+//     {
+//         shape: 'square',
+//         x: 58,
+//         y: 42,
+//         width: 6,
+//     },
+//     {
+//         shape: 'square',
+//         x: 40,
+//         y: 25,
+//         width: 8,
+//     },
+//     {
+//         shape: 'square',
+//         penWidth: 1,
+//         x: 500,
+//         y: 500,
+//         width: 15,
+//     },
+// ];
+// clear();
+// for (let i = 0; i < cmds.length; i++) {
+//     home();
+//     if (cmds[i].shape == 'rect') {
+//         rt(90);
+//         fd(cmds[i].x);
+//         lt(90);
+//         fd(cmds[i].y);
 
+//         for (let j = 0; j < 2; j++) {
+//             fd(cmds[i].height);
+//             rt(90);
+//             fd(cmds[i].width);
+//             rt(90);
+//         }
+//     } else {
+//         rt(90);
+//         fd(cmds[i].x);
+//         lt(90);
+//         fd(cmds[i].y);
+//         for(let k = 0; k < 4; k++){
+//             fd(cmds[i].width)
+//             rt(90);
+//         }
+//     }
+// }
+//19
 
