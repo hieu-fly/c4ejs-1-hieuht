@@ -955,12 +955,12 @@ for (let i = 0; i < jobData.hits[0].benefits.length; i++) {
 console.log("First job hits benefits: " + "\n" + stringList);
 
 // 14.6
-for(let i = 0; i < jobData.hits.length; i++){
+for (let i = 0; i < jobData.hits.length; i++) {
     console.log("-------------------------------------------")
     console.log(jobData.hits[i].jobTitle);
     console.log("Benefits: " + "\n")
-    for(let j = 0; j < jobData.hits[i].benefits.length;j++){
-        console.log("- "+ jobData.hits[i].benefits[j].benefitValue);
+    for (let j = 0; j < jobData.hits[i].benefits.length; j++) {
+        console.log("- " + jobData.hits[i].benefits[j].benefitValue);
     }
 }
 
@@ -979,8 +979,8 @@ for (let i = 0; i < jobData.hits.length; i++) {
     for (let k = 0; k < jobData.hits[i].skills.length; k++) {
         skill += `- ${jobData.hits[i].skills[k]}\n`;
     }
-    str += "----------------------------------------------------" +"\n"
-    console.log(title + salary + address +skill+ str);
+    str += "----------------------------------------------------" + "\n"
+    console.log(title + salary + address + skill + str);
 }
 
 //15
@@ -1126,3 +1126,19 @@ for (let i = 0; i < jobData.hits.length; i++) {
 // }
 //19
 
+const circle = {
+    shape: 'circle',
+    x: 100,
+    y: 50,
+    radius: 30,
+};
+penup();
+rt(90);
+fd(circle.x);
+lt(90);
+fd(circle.y);
+pendown();
+for (let i = 0; i < 360; i++) {
+
+
+}
