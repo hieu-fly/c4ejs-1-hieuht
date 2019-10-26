@@ -312,20 +312,21 @@ newQuote.addEventListener('click', () => {
 //12.1
 const items = ['Backpack', 'MiBand watch', 'Ring'];
 console.log(items);
+var i =2;
 //12.3
 const testItem = document.getElementById('item_list_ul');
 console.log(testItem);
-let i = 2;
 //12.4
 function showList() {
     for (let i = 0; i < items.length; i++) {
-        testItem.insertAdjacentHTML('beforeend', `<li id="${i}"><span>${items[i]}</span><button>remove</button> </li>`);
-        const li = document.getElementById(`${i}`);
-        li.onclick = function(){
+        testItem.insertAdjacentHTML('beforeend', `<li id="remove_${i}"><span>${items[i]}</span><button id="${i}">remove</button> </li>`);
+        let btn = document.getElementById(`${i}`);
+        btn.onclick = function () {
             console.log('remove');
-            console.log('Item:' + li.id);
-            testItem.removeChild(li);
-            console.log(testItem);
+            console.log('Item: ' + btn.id);
+            console.log(btn);
+            console.log(items);
+            document.getElementById(`remove_${i}`).remove();
         }
     }
 }
@@ -338,6 +339,7 @@ const add = document.getElementById('add_btn');
 console.log(itemInput);
 console.log(add);
 //12.7
+
 add.addEventListener('click', () => {
     i++;
     console.log('Add button is clicked');
